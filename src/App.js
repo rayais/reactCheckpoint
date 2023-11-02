@@ -30,16 +30,16 @@ function App() {
       gap:'20px',
       width:'80vw',
       color:'white',
-      marginBottom:'30px',
+      paddingBottom:'30px',
       background:'black',
       display:'flex',
       justifyContent:'center',
       alignItems:'center'}}>
-    <p> Hello {firstName || "Anonymous"} </p>
+    <p> Hello    <span style={{color:'red'}} >{(firstName || "  Anonymous")}</span > </p>
        <p> It looks like you {firstName ? "have" : "don't have"} a name</p>
        {!firstName && (
          <form>
-           <p> Type your name here </p>
+           <p> Type your name here !!!</p>
            <input type="text" />
          </form>
        )}
